@@ -1491,8 +1491,31 @@ button {
 }
 
 @media (max-width: 768px) {
+  .top-bar-right {
+    display: none !important;
+  }
+
+  .top-bar-content {
+    justify-content: center;
+  }
+
+  .top-bar-left {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.78rem;
+  }
+
+  .navbar {
+    padding: 12px 0;
+  }
+
   .desktop-nav {
     display: none;
+  }
+
+  .nav-phone-pill {
+    display: none !important;
   }
 
   .mobile-toggle {
@@ -1601,7 +1624,11 @@ button {
   }
 
   .mobile-drawer-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding-top: 20px;
+    border-top: 1px solid var(--border-subtle);
   }
 
   .btn-drawer-call {
@@ -1616,4 +1643,60 @@ button {
     font-weight: 700;
     font-size: 1rem;
   }
+
+  .btn-drawer-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #25D366;
+    color: #FFF;
+    padding: 14px 20px;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    font-size: 1rem;
+  }
 }
+
+@media (max-width: 480px) {
+  .brand-logo {
+    gap: 8px;
+  }
+
+  .logo-crest {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+
+  .logo-crest svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .logo-brand-title {
+    font-size: 0.92rem;
+    line-height: 1.1;
+  }
+
+  .logo-tagline {
+    font-size: 0.58rem;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .footer-cta-banner h2 {
+    font-size: 1.5rem;
+  }
+}
+
